@@ -58,3 +58,4 @@ if st.session_state.bookmarks:
             f"{bm['description']}\n"
             f"🧭 위치: ({bm['lat']}, {bm['lon']})"
         )
+
