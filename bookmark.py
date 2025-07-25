@@ -49,8 +49,10 @@ for bm in st.session_state.bookmarks:
 # 지도 표시
 st_folium(m, width=1000, height=600)
 
-# 북마크 리스트
+# 북마크 리스트 출력
 if st.session_state.bookmarks:
     st.markdown("### 📌 북마크 목록")
-   for i in range(len(my_list)):
-    print(i)
+    for i, bm in enumerate(st.session_state.bookmarks, start=1):
+        st.markdown(f"**{i}. {bm['name']}**  
+        {bm['description']}  
+        🧭 위치: ({bm['lat']}, {bm['lon']})")
