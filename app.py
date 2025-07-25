@@ -53,6 +53,8 @@ st_folium(m, width=1000, height=600)
 if st.session_state.bookmarks:
     st.markdown("### 📌 북마크 목록")
     for i, bm in enumerate(st.session_state.bookmarks, start=1):
-        st.markdown(f"**{i}. {bm['name']}**  
-        {bm['description']}  
-        🧭 위치: ({bm['lat']}, {bm['lon']})")
+        st.markdown(
+            f"**{i}. {bm['name']}**\n"
+            f"{bm['description']}\n"
+            f"🧭 위치: ({bm['lat']}, {bm['lon']})"
+        )
