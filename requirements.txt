@@ -1,4 +1,3 @@
 plotly
-streamlit-plotly
 folium
 streamlit-folium
