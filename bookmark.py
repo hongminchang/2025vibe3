@@ -52,4 +52,5 @@ st_folium(m, width=1000, height=600)
 # 북마크 리스트
 if st.session_state.bookmarks:
     st.markdown("### 📌 북마크 목록")
-    for i,
+   for i in range(len(my_list)):
+    print(i)
